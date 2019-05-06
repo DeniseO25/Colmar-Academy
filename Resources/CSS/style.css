@@ -5,6 +5,7 @@ html {
   font-size: 18px;
   color: #404040;
   background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,34 +14,34 @@ body {
 }
 
 .container {
-  width: 1200px;
+  background-color: #FFE5CC;
   margin: 0 auto;
-  border: 3px solid red;
 }
 
 /*Header*/
 
 nav.container {
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
-  border: 2px solid yellow;
 
 }
 
- nav.container img {
-
- border: 2px solid purple;
+header nav div {
+  display: flex;
+  align-items: center;
 }
 
-/*find correct selector for logo img*/
+ img.logo {
+  height: 32px;
+  margin-left: 24px;
+}
 
 nav span {
-  font-size: 32px;
-  border: 2px solid orange;
-  position: absolute;
-  left: 3rem;
+  height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .menu ul {
@@ -57,12 +58,18 @@ nav span {
 nav .truncated-menu {
   display: flex;
   justify-content: space-between;
-  border: 2px solid pink;
 }
 
+/*.truncated-menu img {
+  padding: 20px;
+}*/ /*For mobile*/
 
-@media only screen and (max-width: 1024px) {
-  .menu ul {
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 1700px;) {
+  .truncated-menu {
     display: none;
   }
 }
