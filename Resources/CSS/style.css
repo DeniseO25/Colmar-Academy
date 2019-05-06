@@ -1,7 +1,7 @@
 /*Universal Styles*/
 
 html {
-  font-family: "Monsterrat", "Arial", sans-serif;
+  Font-family: 'Nanum Gothic', sans-serif;
   font-size: 18px;
   color: #404040;
   background-color: #FFFFFF;
@@ -25,6 +25,7 @@ nav.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 
 }
 
@@ -48,7 +49,6 @@ nav span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid blue;
 }
 
 .menu ul li {
@@ -64,7 +64,7 @@ nav .truncated-menu {
   padding: 20px;
 }*/ /*For mobile*/
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
 
 }
 
@@ -72,20 +72,43 @@ nav .truncated-menu {
   .truncated-menu {
     display: none;
   }
+}*/
+
+.banner {
+ display: inline-block;
 }
 
 .banner.container {
-  padding: 32px 24px;
+  background-color: #C0C0C0;
 }
 
 .banner.container img {
   width: 60%;
-  border: 2px solid seagreen;
+  padding: 32px 24px;
 }
 
-.banner.container h1,
-p {
+
+.info {
+  display: block;
   float: right;
+  position: relative;
+  padding-right: 24px;
+  bottom: 25rem;
+}
+/*Why does the left side of .info collapse? Should be 24px between image and element*/
+/*Find a way to move .info down center of it's container*/
+
+.info h1 {
+  font-weight: bold;
+  line-height: 3.9;
 }
 
-/*fix this*/
+p.start {
+  color: white;
+  padding: 8px 0;
+  margin-top: 35px;
+  line-height: 3.9;
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+}
