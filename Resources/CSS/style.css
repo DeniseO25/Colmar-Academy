@@ -6,6 +6,8 @@ html {
   color: #404040;
   background-color: #FFFFFF;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -13,19 +15,34 @@ body {
 
 }
 
-.container {
-  background-color: #FFE5CC;
-  margin: 0 auto;
-}
-
 #main-visuals {
   width: 60%;
   padding: 32px 24px;
 }
 
+.learning-container .exhibit-container h1 {
+  font-weight: bold;
+  padding: 0 32px;
+}
+
+.course {
+  background-color: #EEFF00;
+}
+
+.course-info {
+padding: 16px;
+}
+
+h4 {
+  padding: 16px 0;
+}
+
+.course-info p {
+  padding: 8px 0;
+}
 /*Header*/
 
-nav.container {
+nav.header-container {
   height: 64px;
   display: flex;
   align-items: center;
@@ -79,15 +96,14 @@ nav .truncated-menu {
   }
 }*/
 
-.banner {
- display: inline-block;
+/*Banner*/
+
+.banner-container {
+  background-color: #999900;
+  margin: 0 auto;
 }
 
-.banner.container {
-  background-color: #C0C0C0;
-}
-
-.info {
+.banner-info {
   display: block;
   float: right;
   position: relative;
@@ -97,7 +113,7 @@ nav .truncated-menu {
 /*Why does the left side of .info collapse? Should be 24px between image and element*/
 /*Find a way to move .info down center of it's container*/
 
-.info h1 {
+.banner-info h1 {
   font-weight: bold;
   line-height: 3.9;
 }
@@ -114,6 +130,35 @@ p.start {
 
 /*Main Section*/
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-section {
   background-color: white;
+  width: 71.1rem;
+  display: flex;
+}
+
+.main-section h1 {
+  margin-bottom: 24px;
+}
+
+.side-container {
+  display: flex;
+  width: 40%;
+}
+
+/*Learing Section*/
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course {
+  background-color: #FFFB80;
+  padding-bottom: 24px;
+  margin: 32px;
 }
