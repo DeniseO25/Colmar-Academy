@@ -2,9 +2,9 @@
 
 html {
   font-family: 'Telex', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #202020;
-  background-color: #C2F1FF;
+  background-color: #AEE5E6;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -15,9 +15,14 @@ body {
 
 }
 
-.banner .right h1, .banner .right h3 {
-  margin: 1rem 5rem 1rem 0;
-  padding-left: 1rem;
+h2, h4 {
+  font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .column {
@@ -30,21 +35,28 @@ body {
     padding: 2rem 1.5rem;
 }
 
-#main-visuals {
-  width: 60%;
-  padding: 32px 24px;
+.left img {
+  width: 100%;
+}
+
+img {
+  border-radius: 4px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.right {
+  width: 40%;
+  padding: 2rem 0;
 }
 
 #middle {
   text-align: center;
   font-weight: bold;
-  padding: 32px 0 32px 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
+  padding: 2rem 0 2rem 0;
 }
 
 .course {
@@ -52,31 +64,38 @@ body {
 }
 
 .course-info {
-padding: 16px;
-}
-
-.left img {
-  width: 100%;
+padding: 1rem;
 }
 
 h4 {
-  padding: 16px 0;
+  padding: 1rem 0;
 }
 
 .course-info p {
   padding: 8px 0;
 }
 
-/*Header*/
+/*Header Section*/
+
+/*<div class="mobile" role="navigation">
+        <a href="#"><img class="logo" src="resources/images/ic-logo.svg" alt="colmar logo"></a>
+        <a href="#" title="On Campus"><img src="resources/images/ic-on-campus.svg" alt="on campus"></a>
+        <a href="#" title="Online"><img src="resources/images/ic-online.svg" alt="online"></a>
+        <a href="#" title="Login"><img src="resources/images/ic-login.svg" alt="login"></a>
+      </div>*/
+
 
 nav.header.container {
+  color: white;
+  width: 100%;
   height: 64px;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3B6F80;
-
+  background-color: #303F40;
 }
+
 
 header nav div {
   display: flex;
@@ -84,14 +103,18 @@ header nav div {
 }
 
  img.logo {
-  height: 32px;
-  margin-left: 24px;
+  height: 2rem;
+  margin-left: 1.5rem;
 }
 
 nav span {
   height: 32px;
   display: flex;
   align-items: center;
+}
+
+.darken.text {
+  color: #91BEBF;
 }
 
 .menu ul {
@@ -102,6 +125,7 @@ nav span {
 
 .menu ul li {
  padding-right: 16px;
+ color: #AEE5E6;
 }
 
 nav .truncated-menu {
@@ -123,10 +147,17 @@ nav .truncated-menu {
   }
 }*/
 
-/*Banner*/
+
+
+
+/*Banner Section*/
+
+.banner .right {
+  justify-content: center;
+}
 
 .banner.container {
-  background-color: #5DB2CC;
+  background-color: #91BEBF;
   margin: 0 auto;
 }
 
@@ -134,49 +165,81 @@ nav .truncated-menu {
   display: block;
   float: right;
   position: relative;
-  padding-right: 24px;
+  padding-right: 1.5rem;
   bottom: 25rem;
 }
 /*Why does the left side of .info collapse? Should be 24px between image and element*/
 /*Find a way to move .info down center of it's container*/
 
-.banner-info h1 {
+.banner .right h1, .banner .right h3 {
+  margin: 1rem 5rem 1rem 0;
   font-weight: bold;
-  line-height: 3.9;
+  font-size: 1.5rem;
 }
 
-p.start {
+.button {
   color: white;
-  padding: 8px 0;
-  margin-top: 35px;
-  line-height: 3.9;
+  height: 3rem;
+  margin: 1rem 2rem 2rem 0;
+  line-height: 2.9;
   background-color: #404040;
+  border-radius: 4px;
+  box-shadow: 5px 5px 4px teal;
   display: flex;
   justify-content: center;
 }
 
-/*Main Section*/
+/*button {
+    margin: 1rem 5rem 1rem 1rem;
+    height: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 5px rgba(100, 100, 209, 0.7);
+    transition: all 0.1s ease;
+}*/
 
-.main-content {
+/*Information Section*/
+
+.info-section {
   display: flex;
-  margin: 32px 72px;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
-.left.column h1 {
-  margin-bottom: 24px;
+.info-section img {
+  width: 35%;
 }
 
-.right.column {
-  width: 40%;
+.mobile {
+  display: none;
 }
+
+.info .info-section:first-child {
+  padding-top: 0;
+}
+
+.details * {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.info.container h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
 
 /*Course Container*/
 
 .courses {
-  display: flex;
-  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  flex-wrap: wrap;
   overflow: scroll;
+  background-color: 
 }
+
+
 
 .course {
   background-color: #FFFB80;
