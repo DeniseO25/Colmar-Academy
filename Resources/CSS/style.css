@@ -4,6 +4,11 @@ html {
   font-family: 'Telex', sans-serif;
   font-size: 16px;
   color: #202020;
+  /*background: url("./Resources/Images/Vintage-Wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;*/
+
   background-color: #AEE5E6;
   box-sizing: border-box;
   padding: 0;
@@ -195,7 +200,7 @@ nav .truncated-menu {
 }
 
 .info .left span {
-  margin: 2rem 0;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
