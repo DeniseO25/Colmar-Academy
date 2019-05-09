@@ -46,6 +46,7 @@ img {
 a {
   color: inherit;
   text-decoration: inherit;
+  font-weight: bold;
 }
 
 .right {
@@ -185,6 +186,11 @@ nav .truncated-menu {
 
 /*Information Section*/
 
+.info .left span {
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
 .info-section {
   display: flex;
   align-items: center;
@@ -216,20 +222,6 @@ nav .truncated-menu {
 
 /*Course Container*/
 
-/*#middle {
-  text-align: center;
-  font-weight: bold;
-  padding: 2rem 0 2rem 0;
-}*/
-
-/*.courses {
-  flex-direction: column;
-  align-items: center;
-  /*padding: 2rem 4.5rem;*/
-  /*flex-wrap: wrap;*/
-  /*overflow: scroll;*/
-
-
 .courses {
     flex-direction: column;
     align-items: center;
@@ -239,11 +231,12 @@ nav .truncated-menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 }
 
-.courses h2 {
-  padding-top: 2rem;
+.courses h2, .thesis h2 {
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .course {
@@ -251,11 +244,6 @@ nav .truncated-menu {
   background-color: #EEFF00;
   border: 5px dashed lightblue;
   width: 25%;
-
-  /*background-color: #FFFB80;
-  padding-bottom: 24px;
-  margin: 32px;
-  border-radius: 4px;*/
 }
 
 .course img {
@@ -272,6 +260,10 @@ padding: 1rem;
   padding: 8px 0;
 }
 
+.course-info span {
+  color: pink;
+}
+
 .course.one, .four {
   margin: 0 2rem 2rem 4.5rem;
 }
@@ -282,4 +274,19 @@ padding: 1rem;
 
 .course.three, .six {
   margin: 0 4.5rem 2rem 0;
+}
+
+/*Thesis Section*/
+
+.thesis {
+  margin-bottom: 2rem;
+}
+
+.thesis .left .video {
+position: relative;
+bottom: 2rem;
+}
+
+video {
+ width: 100%;
 }
