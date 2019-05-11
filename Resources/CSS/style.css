@@ -78,7 +78,7 @@ h4 {
       </div>*/
 
 
-nav.header.container {
+nav.header.container, .header-footer {
   color: white;
   width: 100%;
   height: 64px;
@@ -240,16 +240,23 @@ nav .truncated-menu {
     align-items: center;
 }
 
-.courses-box {
+.courses h2, .thesis h2 {
+  padding-top: 2rem ;
+  text-align: center;
+}
+
+.row-of-courses-one {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /*margin-top: 2rem;*/
+  margin-top: 2rem;
 }
 
-.courses h2, .thesis h2 {
-  padding: 2rem 0;
-  text-align: center;
+.row-of-courses-two {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
 
 .course {
@@ -262,7 +269,6 @@ nav .truncated-menu {
 .course img {
   width: 100%;
   height: auto;
-
 }
 
 .course-info {
@@ -278,21 +284,27 @@ padding: 1rem;
 }
 
 .course.one, .four {
-  margin: 0 2rem 2rem 4.5rem;
+  margin: 0 2rem 0 4.5rem;
 }
 
 .course.two, .five {
-  margin: 0 2rem 2rem 0;
+  margin: 0 2rem 0 0;
 }
 
 .course.three, .six {
-  margin: 0 4.5rem 2rem 0;
+  margin: 0 4.5rem 0 0;
 }
 
 /*Thesis Section*/
 
 .thesis {
+  flex-direction: column;
   margin-bottom: 2rem;
+}
+
+.thesis-columns {
+  display: flex;
+  margin-top: 2rem;
 }
 
 .thesis .left .video {
@@ -302,4 +314,26 @@ bottom: 2rem;
 
 video {
  width: 100%;
+}
+
+.thesis .right.column {
+  padding: 0 0 0 0;
+}
+
+/*Footer*/
+
+/*footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+footer.header-footer {
+  height: auto;
+  color: #91BEBF;
+}
+
+footer span {
+  padding: 1rem 1.5rem;
 }
