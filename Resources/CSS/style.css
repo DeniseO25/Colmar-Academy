@@ -89,6 +89,10 @@ nav.header.container, .header-footer {
   background-color: #303F40;
 }
 
+nav.header.container.header-footer {
+border-bottom: 2px solid beige;
+
+}
 
 header nav div {
   display: flex;
@@ -314,7 +318,7 @@ padding: 1rem;
 }
 
 .course-info span {
-  color: pink;
+  color: #edd5b6;
 }
 
 .course.one, .four {
@@ -376,6 +380,10 @@ footer.header-footer {
   height: auto;
   color: #91BEBF;
   z-index: 1;
+}
+
+footer.header-footer {
+ border-top: 2px solid beige;
 }
 
 footer a {
