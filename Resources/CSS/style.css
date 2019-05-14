@@ -212,7 +212,7 @@ nav span {
 /* Information Section */
 
 .info .right.column {
-  border:
+
 }
 
 .info .left span {
@@ -229,6 +229,7 @@ nav span {
   align-items: center;
   padding: 1rem;
   border-radius: 6px;
+  border-bottom: 2px solid lightseagreen;
 }
 
 .info .info-section:last-child {
@@ -360,6 +361,10 @@ video {
 
 /* Footer */
 
+footer {
+  padding: 1rem 1.5rem;
+}
+
 /*footer {
   width: 100%;
   display: flex;
@@ -373,6 +378,8 @@ footer.header-footer {
   z-index: 1;
 }
 
-footer span {
-  padding: 1rem 1.5rem;
+footer a {
+  margin-left: auto;
+  margin-right: 2em;
+  padding-right: 0.5em;
 }
