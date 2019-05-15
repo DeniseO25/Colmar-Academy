@@ -318,7 +318,8 @@ padding: 1rem;
 }
 
 .course-info span {
-  color: #edd5b6;
+  color: #edbb7f;
+  /*#edd5b6*/
 }
 
 .course.one, .four {
@@ -387,7 +388,13 @@ footer.header-footer {
 }
 
 footer a {
-  margin-left: auto;
-  margin-right: 2em;
-  padding-right: 0.5em;
+  margin-right: 0.9em;
+}
+
+i.fab.fa-facebook-square.fa-lg, .fab.fa-instagram.fa-lg {
+  padding-right: 0.5rem;
+}
+
+i.fab.fa-twitter-square.fa-lg {
+    margin-right: 1rem;
 }
