@@ -219,7 +219,10 @@ nav span {
 }
 
 .button:active {
-  background-color: #ffd180;
+  /*background-color: #b2dfdb;/*ffd180;*/
+  box-shadow: 5px 3px 3px teal;
+  position: relative;
+  top: 4px;
 }
 
 .button p:visited {
