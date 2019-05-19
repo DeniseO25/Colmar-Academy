@@ -167,6 +167,11 @@ nav span {
     display: none;
   }
 
+  .mobile img.logo {
+    display: flex;
+    margin: auto;
+  }
+
  ul li {
    display: none;
  }
