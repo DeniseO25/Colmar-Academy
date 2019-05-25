@@ -306,9 +306,12 @@ h3 {
   padding-left: 1rem;
 }
 
+.details a {
+  color: rgb(183, 28, 28)
+}
+
 .details a:hover {
   text-decoration: underline;
-  color: #b71c1c;
 }
 
 .info.container h2 {
