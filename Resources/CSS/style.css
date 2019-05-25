@@ -459,15 +459,12 @@ padding: 1rem;
   }
 }
 
-@media only screen and (max-with: 831px) {
-  .row-of-courses-one {
+@media only screen and (max-width: 831px) {
+  .row-of-courses-one, .row-of-courses-two {
     flex-wrap: nowrap;
-   }
-
-   .row-of-courses-two {
-     flex-wrap: nowrap;
   }
 }
+
 
 /* Thesis Section */
 
