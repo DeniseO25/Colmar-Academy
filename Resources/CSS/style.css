@@ -204,7 +204,12 @@ nav span {
 .banner .right h1 {
   margin: 1rem 5rem 1rem 0;
   font-weight: bold;
+  font-size: 3rem;
+}
+
+h3 {
   font-size: 1.5rem;
+  margin-right: 3rem;
 }
 
 .button {
@@ -296,7 +301,6 @@ nav span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid red;
 }
 
 .details * {
