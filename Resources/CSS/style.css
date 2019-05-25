@@ -343,7 +343,7 @@ h3 {
   img.mobile {
     display: block;
     width: 100%;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
 .details {
