@@ -344,6 +344,7 @@ nav span {
 .details {
   width: 100%;
   padding: 1rem 4rem;
+  display: none;
  }
 }
 
@@ -528,13 +529,6 @@ footer {
   padding: 1rem 1.5rem;
 }
 
-/*footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
-
 footer.header-footer {
   height: auto;
   width: inherit;
@@ -572,7 +566,8 @@ footer a:hover {
     display: none;
   }
 
-footer span {
-  text-align: center;
+  footer span {
+    width: 100%;
+    text-align: center;
   }
 }
