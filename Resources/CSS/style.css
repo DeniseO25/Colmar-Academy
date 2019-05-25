@@ -413,7 +413,6 @@ padding: 1rem;
 
 .course-info span {
   color: #edbb7f;
-  /*#edd5b6*/
 }
 
 .course.one, .four {
@@ -426,10 +425,6 @@ padding: 1rem;
 
 .course.three, .six {
   margin: 0 4.5rem 0 0;
-}
-
-@media only screen and (max-with: 832px) {
-
 }
 
 
@@ -461,6 +456,16 @@ padding: 1rem;
 
   .mobile h3:hover {
     background-color: #f0ffff;
+  }
+}
+
+@media only screen and (max-with: 831px) {
+  .row-of-courses-one {
+    flex-wrap: nowrap;
+   }
+
+   .row-of-courses-two {
+     flex-wrap: nowrap;
   }
 }
 
@@ -561,13 +566,15 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
 @media only screen and (max-width: 700px) {
-  .social-menu {
-    display: none;
-  }
 
   footer span {
     width: 100%;
     text-align: center;
+  }
+
+  .social-menu {
+    display: none;
   }
 }
